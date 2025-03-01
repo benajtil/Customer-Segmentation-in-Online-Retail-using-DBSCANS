@@ -1,0 +1,995 @@
+{
+    "rfm": [
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": "<=", "value": 1 },
+          { "field": "Monetary", "operator": ">=", "value": 300 }
+        ],
+        "insight": "Only 1 purchase with high total spend. Potential one-time big spender.",
+        "suggestion": "Re-engage with a special offer or VIP invitation."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 7 },
+          { "field": "Frequency", "operator": ">", "value": 5 }
+        ],
+        "insight": "Very recent buyer with multiple purchases in a short period.",
+        "suggestion": "Nudge them with cross-sell or loyalty rewards."
+      },
+      {
+        "conditions": [
+          { "field": "Monetary", "operator": ">", "value": 1000 }
+        ],
+        "insight": "High total spending overall.",
+        "suggestion": "Consider a premium membership or personal shopping assistance."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 180 },
+          { "field": "Frequency", "operator": "<", "value": 3 }
+        ],
+        "insight": "Inactive for over half a year and low purchase frequency.",
+        "suggestion": "Send a campaign or survey to understand inactivity."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<=", "value": 30 },
+          { "field": "Monetary", "operator": "<", "value": 50 }
+        ],
+        "insight": "Recently purchased but with low total spend.",
+        "suggestion": "Suggest budget-friendly product bundles or freebies for next order."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": ">=", "value": 10 },
+          { "field": "Monetary", "operator": "<", "value": 200 }
+        ],
+        "insight": "Frequent but low-value purchases.",
+        "suggestion": "Offer volume discounts or product upsell to increase basket size."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 365 }
+        ],
+        "insight": "Hasn't purchased in over a year.",
+        "suggestion": "Consider a reactivation campaign with a special discount."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": ">=", "value": 20 }
+        ],
+        "insight": "Super frequent buyer.",
+        "suggestion": "Reward loyalty with tiered benefits or exclusive early access."
+      },
+      {
+        "conditions": [
+          { "field": "Monetary", "operator": "<", "value": 20 }
+        ],
+        "insight": "Extremely low total spend overall.",
+        "suggestion": "Try cross-selling or bigger deals to boost order value."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<=", "value": 2 }
+        ],
+        "insight": "Very recent purchase within last 2 days.",
+        "suggestion": "Send a post-purchase thank-you or invitation for feedback."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": "==", "value": 1 },
+          { "field": "Monetary", "operator": "<", "value": 100 }
+        ],
+        "insight": "Single, low-value purchase.",
+        "suggestion": "Offer discount on next purchase to entice a second sale."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<=", "value": 14 },
+          { "field": "Frequency", "operator": ">=", "value": 5 },
+          { "field": "Monetary", "operator": ">", "value": 500 }
+        ],
+        "insight": "Active, frequent, and high-spending in the last two weeks.",
+        "suggestion": "Promote VIP or loyalty membership to sustain momentum."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": ">", "value": 5 },
+          { "field": "Monetary", "operator": "avgLT", "value": 20 }
+        ],
+        "insight": "High frequency but low average order value.",
+        "suggestion": "Bundle promotions or loyalty points per item to raise average spend."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 90 },
+          { "field": "Monetary", "operator": ">", "value": 300 }
+        ],
+        "insight": "Significant spend in the past, but no recent activity for 3+ months.",
+        "suggestion": "Target with an exclusive comeback campaign or limited-time sale."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": "<=", "value": 3 },
+          { "field": "Monetary", "operator": ">", "value": 1000 }
+        ],
+        "insight": "Few orders but extremely high total spend.",
+        "suggestion": "Personalized approach: invite to a high-end product preview."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 60 },
+          { "field": "Frequency", "operator": ">=", "value": 2 },
+          { "field": "Monetary", "operator": "<", "value": 80 }
+        ],
+        "insight": "Multiple small purchases within last 2 months.",
+        "suggestion": "Suggest larger-value bundles or loyalty-based free shipping."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": ">=", "value": 15 },
+          { "field": "Monetary", "operator": "avgGT", "value": 100 }
+        ],
+        "insight": "Frequent buyer with high average order value.",
+        "suggestion": "Consider top-tier VIP perks or early access to new releases."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<=", "value": 7 },
+          { "field": "Monetary", "operator": ">", "value": 5000 }
+        ],
+        "insight": "A very recent, extremely high-spend purchase.",
+        "suggestion": "Follow up with premium membership invitation or a personal thank-you call."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 270 },
+          { "field": "Frequency", "operator": "==", "value": 1 },
+          { "field": "Monetary", "operator": "<", "value": 100 }
+        ],
+        "insight": "Has not come back for 9+ months after a small single purchase.",
+        "suggestion": "Send a re-introduction campaign or survey to learn why they left."
+      },
+      {
+        "conditions": [
+          { "field": "Monetary", "operator": ">", "value": 2000 },
+          { "field": "Frequency", "operator": ">", "value": 3 },
+          { "field": "Recency", "operator": "<", "value": 60 }
+        ],
+        "insight": "Big spender and frequent buyer in the last 2 months.",
+        "suggestion": "Roll out the red carpet with loyalty upgrades or free shipping."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">=", "value": 7 },
+          { "field": "Recency", "operator": "<=", "value": 30 },
+          { "field": "Frequency", "operator": ">=", "value": 3 },
+          { "field": "Frequency", "operator": "<=", "value": 10 },
+          { "field": "Monetary", "operator": ">=", "value": 50 },
+          { "field": "Monetary", "operator": "<=", "value": 300 }
+        ],
+        "insight": "Steady customer with moderate activity and spending.",
+        "suggestion": "Maintain engagement with regular updates and loyalty points."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">=", "value": 30 },
+          { "field": "Recency", "operator": "<=", "value": 90 },
+          { "field": "Frequency", "operator": ">=", "value": 2 },
+          { "field": "Monetary", "operator": ">=", "value": 50 },
+          { "field": "Monetary", "operator": "<", "value": 200 }
+        ],
+        "insight": "Moderate recency with consistent but low-value orders.",
+        "suggestion": "Offer incentives to gradually increase order value."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 90 },
+          { "field": "Frequency", "operator": ">=", "value": 10 },
+          { "field": "Monetary", "operator": ">=", "value": 200 },
+          { "field": "Monetary", "operator": "<", "value": 500 }
+        ],
+        "insight": "Decent frequency with moderate spending, but purchase recency is lagging.",
+        "suggestion": "Boost engagement with time-limited offers or reactivation campaigns."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 10 },
+          { "field": "Frequency", "operator": "<", "value": 3 },
+          { "field": "Monetary", "operator": "<", "value": 50 }
+        ],
+        "insight": "New customer with low frequency and spending.",
+        "suggestion": "Nurture the relationship with introductory discounts and personalized recommendations."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 200 },
+          { "field": "Frequency", "operator": ">", "value": 20 },
+          { "field": "Monetary", "operator": "<", "value": 100 }
+        ],
+        "insight": "High frequency but extremely low spend after a long inactivity.",
+        "suggestion": "Investigate the cause and encourage higher spend per order."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 15 },
+          { "field": "Frequency", "operator": ">", "value": 20 },
+          { "field": "Monetary", "operator": ">", "value": 1000 }
+        ],
+        "insight": "Rapid repeat orders with high spending in a short period.",
+        "suggestion": "Reward the customer with exclusive perks or early access to new products."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">=", "value": 60 },
+          { "field": "Recency", "operator": "<", "value": 120 },
+          { "field": "Frequency", "operator": ">=", "value": 5 },
+          { "field": "Monetary", "operator": ">", "value": 300 },
+          { "field": "Monetary", "operator": "<=", "value": 700 }
+        ],
+        "insight": "Balanced customer with moderate recency, frequency, and spending.",
+        "suggestion": "Maintain satisfaction with steady loyalty incentives."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 150 },
+          { "field": "Frequency", "operator": "<", "value": 5 },
+          { "field": "Monetary", "operator": ">", "value": 500 }
+        ],
+        "insight": "Long gap with surprisingly high spending in few orders.",
+        "suggestion": "Engage with personalized outreach and high-value promotions."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 30 },
+          { "field": "Frequency", "operator": ">=", "value": 10 },
+          { "field": "Monetary", "operator": ">=", "value": 300 },
+          { "field": "Monetary", "operator": "<", "value": 600 }
+        ],
+        "insight": "Recent active customer with consistent medium spend.",
+        "suggestion": "Encourage upselling with bundled offers."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 300 },
+          { "field": "Frequency", "operator": "<", "value": 2 },
+          { "field": "Monetary", "operator": "<", "value": 50 }
+        ],
+        "insight": "Significant inactivity with minimal orders.",
+        "suggestion": "Launch a strong reactivation strategy to win back the customer."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">=", "value": 10 },
+          { "field": "Recency", "operator": "<=", "value": 20 },
+          { "field": "Frequency", "operator": ">=", "value": 2 },
+          { "field": "Frequency", "operator": "<=", "value": 4 },
+          { "field": "Monetary", "operator": ">=", "value": 100 },
+          { "field": "Monetary", "operator": "<=", "value": 300 }
+        ],
+        "insight": "Customer showing steady interest.",
+        "suggestion": "Offer personalized product recommendations."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">=", "value": 15 },
+          { "field": "Recency", "operator": "<=", "value": 30 },
+          { "field": "Frequency", "operator": "==", "value": 1 },
+          { "field": "Monetary", "operator": ">=", "value": 100 },
+          { "field": "Monetary", "operator": "<=", "value": 150 }
+        ],
+        "insight": "One-off purchase recently.",
+        "suggestion": "Send follow-up discount to encourage second purchase."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 400 },
+          { "field": "Frequency", "operator": ">=", "value": 5 },
+          { "field": "Monetary", "operator": ">", "value": 500 }
+        ],
+        "insight": "Loyal customer returning after long break.",
+        "suggestion": "Offer reactivation bonus."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 3 },
+          { "field": "Frequency", "operator": ">=", "value": 5 },
+          { "field": "Monetary", "operator": "<", "value": 100 }
+        ],
+        "insight": "Very active but low spending.",
+        "suggestion": "Introduce value packs or bundle offers."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 20 },
+          { "field": "Frequency", "operator": ">=", "value": 10 },
+          { "field": "Monetary", "operator": ">=", "value": 100 },
+          { "field": "Monetary", "operator": "<=", "value": 250 }
+        ],
+        "insight": "Frequent, moderate spender.",
+        "suggestion": "Promote volume discounts."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">=", "value": 50 },
+          { "field": "Recency", "operator": "<=", "value": 100 },
+          { "field": "Frequency", "operator": "<", "value": 2 },
+          { "field": "Monetary", "operator": ">=", "value": 50 },
+          { "field": "Monetary", "operator": "<=", "value": 200 }
+        ],
+        "insight": "Occasional buyer.",
+        "suggestion": "Offer incentive to increase purchase frequency."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 7 },
+          { "field": "Frequency", "operator": "<", "value": 2 },
+          { "field": "Monetary", "operator": ">", "value": 200 }
+        ],
+        "insight": "Recent high-value purchase by an infrequent buyer.",
+        "suggestion": "Check satisfaction and upsell."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 30 },
+          { "field": "Frequency", "operator": ">", "value": 10 },
+          { "field": "Monetary", "operator": ">=", "value": 100 },
+          { "field": "Monetary", "operator": "<=", "value": 300 }
+        ],
+        "insight": "Frequent purchases with moderate spend.",
+        "suggestion": "Reward consistency with loyalty perks."
+      },
+      {
+        "conditions": [
+          { "field": "Monetary", "operator": ">", "value": 10000 }
+        ],
+        "insight": "Exceptional spender.",
+        "suggestion": "Offer exclusive personal shopper or VIP service."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 1 },
+          { "field": "Frequency", "operator": ">", "value": 15 },
+          { "field": "Monetary", "operator": ">=", "value": 300 }
+        ],
+        "insight": "Immediate repeat purchases.",
+        "suggestion": "Offer a thank you gift for loyalty."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">=", "value": 200 },
+          { "field": "Recency", "operator": "<=", "value": 250 },
+          { "field": "Frequency", "operator": ">=", "value": 3 },
+          { "field": "Frequency", "operator": "<=", "value": 5 },
+          { "field": "Monetary", "operator": ">=", "value": 200 },
+          { "field": "Monetary", "operator": "<=", "value": 400 }
+        ],
+        "insight": "Long gap with moderate spending.",
+        "suggestion": "Encourage reactivation with a targeted campaign."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": "==", "value": 2 },
+          { "field": "Monetary", "operator": "==", "value": 50 }
+        ],
+        "insight": "Minimal engagement.",
+        "suggestion": "Introduce a discount for the next purchase."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": "==", "value": 3 },
+          { "field": "Monetary", "operator": ">=", "value": 300 },
+          { "field": "Monetary", "operator": "<=", "value": 350 },
+          { "field": "Recency", "operator": "<", "value": 15 }
+        ],
+        "insight": "Recent purchase with high average order.",
+        "suggestion": "Offer a loyalty points boost."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": ">", "value": 10 },
+          { "field": "Monetary", "operator": ">", "value": 1000 },
+          { "field": "Recency", "operator": ">=", "value": 20 },
+          { "field": "Recency", "operator": "<=", "value": 40 }
+        ],
+        "insight": "Steady and high spender.",
+        "suggestion": "Promote premium membership."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 500 },
+          { "field": "Frequency", "operator": "<", "value": 1 },
+          { "field": "Monetary", "operator": "<", "value": 50 }
+        ],
+        "insight": "Dormant customer.",
+        "suggestion": "Send a re-engagement survey."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">=", "value": 60 },
+          { "field": "Recency", "operator": "<=", "value": 80 },
+          { "field": "Frequency", "operator": ">=", "value": 4 },
+          { "field": "Frequency", "operator": "<=", "value": 6 },
+          { "field": "Monetary", "operator": ">=", "value": 400 },
+          { "field": "Monetary", "operator": "<=", "value": 600 }
+        ],
+        "insight": "Balanced customer profile.",
+        "suggestion": "Reward with a loyalty bonus."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": ">", "value": 25 },
+          { "field": "Monetary", "operator": "<", "value": 150 },
+          { "field": "Recency", "operator": "<", "value": 10 }
+        ],
+        "insight": "Very frequent but low average spend.",
+        "suggestion": "Encourage upsell or bundle offers."
+      },
+      {
+        "conditions": [
+          { "field": "Monetary", "operator": ">=", "value": 500 },
+          { "field": "Monetary", "operator": "<=", "value": 700 },
+          { "field": "Frequency", "operator": ">=", "value": 2 },
+          { "field": "Frequency", "operator": "<=", "value": 4 },
+          { "field": "Recency", "operator": ">=", "value": 30 },
+          { "field": "Recency", "operator": "<=", "value": 50 }
+        ],
+        "insight": "Selective high-spending customer.",
+        "suggestion": "Offer personalized premium recommendations."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">=", "value": 10 },
+          { "field": "Recency", "operator": "<=", "value": 50 },
+          { "field": "Frequency", "operator": "==", "value": 5 },
+          { "field": "Monetary", "operator": ">=", "value": 150 },
+          { "field": "Monetary", "operator": "<=", "value": 250 }
+        ],
+        "insight": "Consistent middle-range customer.",
+        "suggestion": "Maintain engagement with loyalty programs."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 5 },
+          { "field": "Frequency", "operator": "<=", "value": 2 },
+          { "field": "Monetary", "operator": ">", "value": 800 }
+        ],
+        "insight": "New high spender with limited activity.",
+        "suggestion": "Encourage more frequent purchases."
+      }
+    ],
+    "lrfmp": [
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 365 },
+          { "field": "Frequency", "operator": ">", "value": 5 }
+        ],
+        "insight": "Customer for over a year with multiple purchases.",
+        "suggestion": "Consider a loyalty milestone reward or membership."
+      },
+      {
+        "conditions": [
+          { "field": "Periodicity", "operator": ">", "value": 60 }
+        ],
+        "insight": "Long average gap between orders.",
+        "suggestion": "Send periodic reminders or seasonal promotions to reduce intervals."
+      },
+      {
+        "conditions": [
+          { "field": "Monetary", "operator": "<", "value": 50 }
+        ],
+        "insight": "Overall spend is quite low.",
+        "suggestion": "Offer deals or upsells to boost average order value."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 14 },
+          { "field": "Frequency", "operator": ">", "value": 3 }
+        ],
+        "insight": "Recently active with multiple orders in 2 weeks.",
+        "suggestion": "Encourage them to join a subscription or monthly plan."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": "<", "value": 30 },
+          { "field": "Frequency", "operator": "<=", "value": 1 },
+          { "field": "Recency", "operator": "<", "value": 5 }
+        ],
+        "insight": "New customer with minimal purchase activity.",
+        "suggestion": "Provide a warm welcome and highlight top products."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 730 }
+        ],
+        "insight": "Long-term relationship (2+ years).",
+        "suggestion": "Send an anniversary thank-you or advanced loyalty perk."
+      },
+      {
+        "conditions": [
+          { "field": "Monetary", "operator": ">", "value": 1000 },
+          { "field": "Periodicity", "operator": "<", "value": 30 },
+          { "field": "Recency", "operator": "<", "value": 20 }
+        ],
+        "insight": "High spend with short intervals between purchases.",
+        "suggestion": "Tailor a frequent-shopper program or premium subscription."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": ">=", "value": 20 },
+          { "field": "Length", "operator": "<", "value": 180 }
+        ],
+        "insight": "Extremely frequent buyer within first 6 months of relationship.",
+        "suggestion": "Offer top-tier incentives early to solidify loyalty."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 180 },
+          { "field": "Length", "operator": ">", "value": 365 }
+        ],
+        "insight": "Long-time customer but hasn't purchased in 6+ months.",
+        "suggestion": "Send a 'Messages or Emails' or loyalty reactivation campaign."
+      },
+      {
+        "conditions": [
+          { "field": "Monetary", "operator": ">", "value": 5000 }
+        ],
+        "insight": "Significant total spend over time.",
+        "suggestion": "Personal VIP approach or invite them to exclusive events."
+      },
+      {
+        "conditions": [
+          { "field": "Periodicity", "operator": ">", "value": 120 },
+          { "field": "Frequency", "operator": ">", "value": 1 }
+        ],
+        "insight": "Multiple purchases but huge gaps between them.",
+        "suggestion": "Encourage more consistent buying with limited-time offers."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": "<", "value": 60 },
+          { "field": "Monetary", "operator": ">", "value": 500 },
+          { "field": "Recency", "operator": "<", "value": 25 }
+        ],
+        "insight": "Relatively new but already high spending.",
+        "suggestion": "Welcome them with an early big spender incentive."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": "<=", "value": 2 },
+          { "field": "Monetary", "operator": "<=", "value": 100 },
+          { "field": "Length", "operator": ">", "value": 300 }
+        ],
+        "insight": "Very low activity and spend over a long relationship.",
+        "suggestion": "Try a targeted reactivation or big discount to spark interest."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<=", "value": 7 },
+          { "field": "Periodicity", "operator": "<", "value": 20 }
+        ],
+        "insight": "Recent purchase and short intervals between orders.",
+        "suggestion": "Upsell complementary products or subscription services."
+      },
+      {
+        "conditions": [
+          { "field": "Monetary", "operator": "avgGT", "value": 300 },
+          { "field": "Frequency", "operator": ">", "value": 1 }
+        ],
+        "insight": "Very high average order value across multiple orders.",
+        "suggestion": "Offer premium services or advanced loyalty tiers."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 500 },
+          { "field": "Frequency", "operator": "<", "value": 3 }
+        ],
+        "insight": "Customer for a long time but only a few orders.",
+        "suggestion": "Send exclusive re-engagement or phone-based outreach."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 365 },
+          { "field": "Frequency", "operator": ">", "value": 5 }
+        ],
+        "insight": "Multiple orders historically, but no activity in over a year.",
+        "suggestion": "Personalized 'Come Back' promotion or special event invite."
+      },
+      {
+        "conditions": [
+          { "field": "Frequency", "operator": ">", "value": 30 },
+          { "field": "Monetary", "operator": "<", "value": 500 }
+        ],
+        "insight": "High volume of orders but relatively low total spend.",
+        "suggestion": "Suggest higher-end products or bundling to increase spend per order."
+      },
+      {
+        "conditions": [
+          { "field": "Periodicity", "operator": "<=", "value": 10 },
+          { "field": "Frequency", "operator": ">=", "value": 10 }
+        ],
+        "insight": "They purchase very frequently with many orders.",
+        "suggestion": "Potential subscription or advanced loyalty benefits to keep them engaged."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": "<", "value": 90 },
+          { "field": "Frequency", "operator": ">", "value": 10 },
+          { "field": "Monetary", "operator": ">", "value": 1000 }
+        ],
+        "insight": "New but extremely active and high-spending within 3 months.",
+        "suggestion": "Immediate VIP-level recognition or personal shopper approach."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">=", "value": 400 },
+          { "field": "Length", "operator": "<=", "value": 600 },
+          { "field": "Recency", "operator": ">=", "value": 30 },
+          { "field": "Recency", "operator": "<=", "value": 90 },
+          { "field": "Frequency", "operator": ">=", "value": 5 },
+          { "field": "Frequency", "operator": "<=", "value": 10 },
+          { "field": "Monetary", "operator": ">=", "value": 200 },
+          { "field": "Monetary", "operator": "<=", "value": 600 },
+          { "field": "Periodicity", "operator": ">=", "value": 20 },
+          { "field": "Periodicity", "operator": "<=", "value": 40 }
+        ],
+        "insight": "Steady and consistent customer with balanced metrics.",
+        "suggestion": "Maintain the relationship with regular engagement and personalized offers."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": "<", "value": 100 },
+          { "field": "Recency", "operator": "<", "value": 14 },
+          { "field": "Frequency", "operator": "<", "value": 5 },
+          { "field": "Monetary", "operator": "<", "value": 200 },
+          { "field": "Periodicity", "operator": "<", "value": 15 }
+        ],
+        "insight": "Very new customer with low activity.",
+        "suggestion": "Introduce them with welcome incentives and guidance on popular products."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 800 },
+          { "field": "Recency", "operator": ">", "value": 120 },
+          { "field": "Frequency", "operator": "<", "value": 4 },
+          { "field": "Monetary", "operator": ">", "value": 700 }
+        ],
+        "insight": "Long-term customer with declining frequency but high spending.",
+        "suggestion": "Investigate for potential issues and offer re-engagement initiatives."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">=", "value": 30 },
+          { "field": "Recency", "operator": "<=", "value": 60 },
+          { "field": "Frequency", "operator": ">=", "value": 10 },
+          { "field": "Monetary", "operator": ">=", "value": 500 },
+          { "field": "Periodicity", "operator": "<", "value": 20 }
+        ],
+        "insight": "Highly engaged customer with frequent, moderate spend orders.",
+        "suggestion": "Reward their loyalty with exclusive benefits or early access sales."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 500 },
+          { "field": "Recency", "operator": ">", "value": 200 },
+          { "field": "Frequency", "operator": "<", "value": 3 },
+          { "field": "Monetary", "operator": "<", "value": 100 }
+        ],
+        "insight": "Long relationship but minimal recent activity.",
+        "suggestion": "Deploy an aggressive reactivation strategy to rekindle interest."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 15 },
+          { "field": "Frequency", "operator": ">", "value": 15 },
+          { "field": "Monetary", "operator": ">", "value": 1500 },
+          { "field": "Periodicity", "operator": "<", "value": 10 }
+        ],
+        "insight": "New, ultra-active customer with high spending potential.",
+        "suggestion": "Fast-track them into a premium loyalty program."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 700 },
+          { "field": "Recency", "operator": ">", "value": 100 },
+          { "field": "Frequency", "operator": ">=", "value": 5 },
+          { "field": "Monetary", "operator": ">=", "value": 300 },
+          { "field": "Periodicity", "operator": ">", "value": 50 }
+        ],
+        "insight": "Stable long-term customer with high periodicity between orders.",
+        "suggestion": "Encourage more frequent purchases with time-sensitive offers."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": "<", "value": 300 },
+          { "field": "Recency", "operator": "<", "value": 30 },
+          { "field": "Frequency", "operator": ">=", "value": 10 },
+          { "field": "Monetary", "operator": ">=", "value": 300 },
+          { "field": "Periodicity", "operator": "<", "value": 20 }
+        ],
+        "insight": "New but rapidly growing customer base.",
+        "suggestion": "Invest in personalized cross-sell strategies to increase order value."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": ">", "value": 250 },
+          { "field": "Frequency", "operator": ">=", "value": 20 },
+          { "field": "Monetary", "operator": "<", "value": 200 }
+        ],
+        "insight": "High order frequency but low spend and long recency period.",
+        "suggestion": "Reassess pricing strategy and explore upselling opportunities."
+      },
+      {
+        "conditions": [
+          { "field": "Recency", "operator": "<", "value": 7 },
+          { "field": "Frequency", "operator": "<", "value": 3 },
+          { "field": "Monetary", "operator": ">", "value": 800 }
+        ],
+        "insight": "Recent high-value purchase despite low frequency.",
+        "suggestion": "Ensure post-purchase satisfaction and consider personal follow-up."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">=", "value": 100 },
+          { "field": "Length", "operator": "<=", "value": 200 },
+          { "field": "Recency", "operator": ">=", "value": 10 },
+          { "field": "Recency", "operator": "<=", "value": 20 },
+          { "field": "Frequency", "operator": ">=", "value": 2 },
+          { "field": "Frequency", "operator": "<=", "value": 4 },
+          { "field": "Monetary", "operator": ">=", "value": 100 },
+          { "field": "Monetary", "operator": "<=", "value": 250 },
+          { "field": "Periodicity", "operator": ">=", "value": 15 },
+          { "field": "Periodicity", "operator": "<=", "value": 25 }
+        ],
+        "insight": "Emerging customer with growth potential.",
+        "suggestion": "Offer introductory loyalty rewards."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">=", "value": 200 },
+          { "field": "Length", "operator": "<=", "value": 300 },
+          { "field": "Recency", "operator": ">=", "value": 20 },
+          { "field": "Recency", "operator": "<=", "value": 40 },
+          { "field": "Frequency", "operator": ">=", "value": 3 },
+          { "field": "Frequency", "operator": "<=", "value": 6 },
+          { "field": "Monetary", "operator": ">=", "value": 200 },
+          { "field": "Monetary", "operator": "<=", "value": 400 },
+          { "field": "Periodicity", "operator": ">=", "value": 20 },
+          { "field": "Periodicity", "operator": "<=", "value": 30 }
+        ],
+        "insight": "Developing relationship with moderate engagement.",
+        "suggestion": "Introduce upselling and cross-selling offers."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 400 },
+          { "field": "Recency", "operator": "<", "value": 10 },
+          { "field": "Frequency", "operator": ">", "value": 10 },
+          { "field": "Monetary", "operator": ">", "value": 1000 },
+          { "field": "Periodicity", "operator": "<", "value": 10 }
+        ],
+        "insight": "Long-term customer with rapid repeat purchases.",
+        "suggestion": "Offer subscription or VIP program."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 600 },
+          { "field": "Recency", "operator": ">=", "value": 100 },
+          { "field": "Recency", "operator": "<=", "value": 150 },
+          { "field": "Frequency", "operator": ">=", "value": 4 },
+          { "field": "Frequency", "operator": "<=", "value": 8 },
+          { "field": "Monetary", "operator": ">=", "value": 300 },
+          { "field": "Monetary", "operator": "<=", "value": 600 },
+          { "field": "Periodicity", "operator": ">=", "value": 30 },
+          { "field": "Periodicity", "operator": "<=", "value": 50 }
+        ],
+        "insight": "Mature customer with stable behavior.",
+        "suggestion": "Maintain steady communication."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": "<", "value": 50 },
+          { "field": "Recency", "operator": "<", "value": 7 },
+          { "field": "Frequency", "operator": "<", "value": 2 },
+          { "field": "Monetary", "operator": "<", "value": 100 },
+          { "field": "Periodicity", "operator": ">", "value": 40 }
+        ],
+        "insight": "Very new and cautious buyer.",
+        "suggestion": "Provide educational content and a welcome discount."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 800 },
+          { "field": "Recency", "operator": ">", "value": 200 },
+          { "field": "Frequency", "operator": "<", "value": 5 },
+          { "field": "Monetary", "operator": ">", "value": 800 },
+          { "field": "Periodicity", "operator": ">", "value": 70 }
+        ],
+        "insight": "Loyal but infrequent buyer.",
+        "suggestion": "Reach out with personalized offers to reactivate."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">=", "value": 150 },
+          { "field": "Length", "operator": "<=", "value": 250 },
+          { "field": "Recency", "operator": ">=", "value": 30 },
+          { "field": "Recency", "operator": "<=", "value": 50 },
+          { "field": "Frequency", "operator": ">=", "value": 5 },
+          { "field": "Frequency", "operator": "<=", "value": 8 },
+          { "field": "Monetary", "operator": ">=", "value": 300 },
+          { "field": "Monetary", "operator": "<=", "value": 500 },
+          { "field": "Periodicity", "operator": ">=", "value": 20 },
+          { "field": "Periodicity", "operator": "<=", "value": 30 }
+        ],
+        "insight": "Consistent and balanced customer.",
+        "suggestion": "Offer regular loyalty points."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 500 },
+          { "field": "Recency", "operator": "<", "value": 20 },
+          { "field": "Frequency", "operator": ">", "value": 15 },
+          { "field": "Monetary", "operator": ">", "value": 1200 },
+          { "field": "Periodicity", "operator": "<", "value": 15 }
+        ],
+        "insight": "Highly engaged long-term customer.",
+        "suggestion": "Prioritize with exclusive deals."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">=", "value": 100 },
+          { "field": "Length", "operator": "<=", "value": 300 },
+          { "field": "Recency", "operator": ">=", "value": 50 },
+          { "field": "Recency", "operator": "<=", "value": 70 },
+          { "field": "Frequency", "operator": ">=", "value": 2 },
+          { "field": "Frequency", "operator": "<=", "value": 4 },
+          { "field": "Monetary", "operator": ">=", "value": 100 },
+          { "field": "Monetary", "operator": "<=", "value": 200 },
+          { "field": "Periodicity", "operator": ">=", "value": 40 },
+          { "field": "Periodicity", "operator": "<=", "value": 60 }
+        ],
+        "insight": "Infrequent but steady spending customer.",
+        "suggestion": "Offer incentives to increase frequency."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 300 },
+          { "field": "Recency", "operator": ">", "value": 150 },
+          { "field": "Frequency", "operator": ">", "value": 10 },
+          { "field": "Monetary", "operator": ">", "value": 500 },
+          { "field": "Periodicity", "operator": ">", "value": 50 }
+        ],
+        "insight": "Longstanding customer with lapsing engagement.",
+        "suggestion": "A reactivation campaign is needed."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": "<", "value": 100 },
+          { "field": "Recency", "operator": "<", "value": 15 },
+          { "field": "Frequency", "operator": "<", "value": 5 },
+          { "field": "Monetary", "operator": "<", "value": 150 },
+          { "field": "Periodicity", "operator": "<", "value": 10 }
+        ],
+        "insight": "Brand new customer with low activity.",
+        "suggestion": "Engage with a welcome series."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 900 },
+          { "field": "Recency", "operator": ">", "value": 300 },
+          { "field": "Frequency", "operator": "<", "value": 3 },
+          { "field": "Monetary", "operator": ">", "value": 1000 },
+          { "field": "Periodicity", "operator": ">", "value": 80 }
+        ],
+        "insight": "Very long-term customer with sporadic high spending.",
+        "suggestion": "Offer personalized outreach."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">=", "value": 200 },
+          { "field": "Length", "operator": "<=", "value": 400 },
+          { "field": "Recency", "operator": ">=", "value": 20 },
+          { "field": "Recency", "operator": "<=", "value": 40 },
+          { "field": "Frequency", "operator": ">=", "value": 5 },
+          { "field": "Frequency", "operator": "<=", "value": 10 },
+          { "field": "Monetary", "operator": ">=", "value": 250 },
+          { "field": "Monetary", "operator": "<=", "value": 450 },
+          { "field": "Periodicity", "operator": ">=", "value": 15 },
+          { "field": "Periodicity", "operator": "<=", "value": 25 }
+        ],
+        "insight": "Steady customer with potential for growth.",
+        "suggestion": "Encourage with loyalty programs."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 500 },
+          { "field": "Recency", "operator": ">", "value": 80 },
+          { "field": "Recency", "operator": "<=", "value": 100 },
+          { "field": "Frequency", "operator": ">", "value": 12 },
+          { "field": "Monetary", "operator": ">", "value": 700 },
+          { "field": "Periodicity", "operator": ">=", "value": 25 },
+          { "field": "Periodicity", "operator": "<=", "value": 35 }
+        ],
+        "insight": "Highly active customer with significant purchases.",
+        "suggestion": "Reward with premium benefits."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": "<", "value": 150 },
+          { "field": "Recency", "operator": ">=", "value": 5 },
+          { "field": "Recency", "operator": "<=", "value": 10 },
+          { "field": "Frequency", "operator": ">=", "value": 3 },
+          { "field": "Frequency", "operator": "<=", "value": 5 },
+          { "field": "Monetary", "operator": ">=", "value": 150 },
+          { "field": "Monetary", "operator": "<=", "value": 300 },
+          { "field": "Periodicity", "operator": "<", "value": 15 }
+        ],
+        "insight": "New but quickly engaging customer.",
+        "suggestion": "Offer early rewards to cement loyalty."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 250 },
+          { "field": "Recency", "operator": ">", "value": 50 },
+          { "field": "Frequency", "operator": ">", "value": 7 },
+          { "field": "Monetary", "operator": ">", "value": 400 },
+          { "field": "Periodicity", "operator": ">", "value": 20 }
+        ],
+        "insight": "Established customer with moderate engagement gaps.",
+        "suggestion": "Send reactivation reminders periodically."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">=", "value": 100 },
+          { "field": "Length", "operator": "<=", "value": 200 },
+          { "field": "Recency", "operator": "<", "value": 10 },
+          { "field": "Frequency", "operator": "<", "value": 3 },
+          { "field": "Monetary", "operator": ">=", "value": 80 },
+          { "field": "Monetary", "operator": "<=", "value": 150 },
+          { "field": "Periodicity", "operator": ">=", "value": 10 },
+          { "field": "Periodicity", "operator": "<=", "value": 20 }
+        ],
+        "insight": "Recently activated low-spender.",
+        "suggestion": "Encourage additional purchases with incentives."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 600 },
+          { "field": "Recency", "operator": "<", "value": 30 },
+          { "field": "Frequency", "operator": ">", "value": 8 },
+          { "field": "Monetary", "operator": ">", "value": 900 },
+          { "field": "Periodicity", "operator": "<", "value": 15 }
+        ],
+        "insight": "Loyal customer with a surge in activity.",
+        "suggestion": "Offer a loyalty bonus."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">=", "value": 300 },
+          { "field": "Length", "operator": "<=", "value": 500 },
+          { "field": "Recency", "operator": ">=", "value": 40 },
+          { "field": "Recency", "operator": "<=", "value": 60 },
+          { "field": "Frequency", "operator": ">=", "value": 4 },
+          { "field": "Frequency", "operator": "<=", "value": 6 },
+          { "field": "Monetary", "operator": ">=", "value": 250 },
+          { "field": "Monetary", "operator": "<=", "value": 350 },
+          { "field": "Periodicity", "operator": ">=", "value": 20 },
+          { "field": "Periodicity", "operator": "<=", "value": 30 }
+        ],
+        "insight": "Balanced long-term customer.",
+        "suggestion": "Maintain steady engagement."
+      },
+      {
+        "conditions": [
+          { "field": "Length", "operator": ">", "value": 400 },
+          { "field": "Recency", "operator": ">", "value": 90 },
+          { "field": "Frequency", "operator": "<", "value": 4 },
+          { "field": "Monetary", "operator": ">", "value": 500 },
+          { "field": "Periodicity", "operator": ">", "value": 30 }
+        ],
+        "insight": "Occasional high spender in a long-term relationship.",
+        "suggestion": "Provide targeted offers to increase frequency."
+      }
+    ]
+  }
+  
